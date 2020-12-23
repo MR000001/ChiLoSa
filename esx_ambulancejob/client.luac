@@ -737,7 +737,7 @@ function Processooo()
 				if CurrentAction ~= nil then
 					ESX.ShowHelpNotification(CurrentActionMsg)
 
-					if IsControlJustReleased(0, 38) and PlayerData.job ~= nil and PlayerData.job.name == 'ambulance' then
+					if IsControlJustReleased(0, Keys['E']) and PlayerData.job ~= nil and PlayerData.job.name == 'ambulance' then
 
 						if CurrentAction == 'ambulance_actions_menu' then
 							OpenAmbulanceActionsMenu()
@@ -763,7 +763,7 @@ function Processooo()
 
 				end
 
-				if IsControlJustReleased(0, 167) and PlayerData.job ~= nil and PlayerData.job.name == 'ambulance' and not IsDead then
+				if IsControlJustReleased(0, Keys['F6']) and PlayerData.job ~= nil and PlayerData.job.name == 'ambulance' and not IsDead then
 					--TriggerServerEvent("ambulancejob_esx:getPlayers")
 					OpenMobileAmbulanceActionsMenu()
 				end
